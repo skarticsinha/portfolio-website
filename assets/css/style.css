@@ -443,6 +443,14 @@ main {
 
 .contact-info address { font-style: normal; }
 
+.contacts-wrapper{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  gap: 10px;
+  align-items: center;
+}
+
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -464,7 +472,7 @@ main {
 .resume-btn {
   position: relative;
   margin-top: 10px;
-  width: 85%;
+  /* width: 85%; */
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
@@ -1802,7 +1810,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
-
+  .contacts-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+  }
 
   /**
    * ABOUT
