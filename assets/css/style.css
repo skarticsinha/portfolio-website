@@ -332,8 +332,22 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  position: relative; /* Make the box a relative container */
+  /* background: var(--bg-gradient-onyx); */
   border-radius: 20px;
+  width: 200px; /* Adjust width as needed */
+  height: 170px; /* Adjust height as needed */
+  overflow: visible; /* Hide the part of the image that overflows the box */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.avatar {
+  position: absolute;
+  top: -24px; /* Move the image up so that it overflows from the top */
+  /* transform: scale(1.2); */
+  /*border-radius: 50%; /* Optional: make the image circular */
 }
 
 .info-content .name {
